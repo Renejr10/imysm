@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style class="text/css">
+   body {
+    background: black;
+   }
+
+.container {
+    width: 100px;
+}
+
+.text {
+    position: absolute;
+    font-size: 3rem;
+    height: 100rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 900;
+    color: cyan;
+    text-shadow: 0 0 3px white;
+    margin-left: 50px;
+    animation: fall 20s;
+}
+
+@keyframes fall {
+    from { transform: translateY(0px) scale(1); }
+    25 { transform: translateY(250px) scale(1.5); }
+    50 { transform: translateY(500px) scale(1); }
+    75 { transform: translateY(750px) scale(1.5); }
+    to { transform: translateY(1020px) scale(0); }
+}
+</style>
+
+<body>
+    <div class="container">
+       <span class="text">I MISS YOU</span>
+    </div>
+</body>
+</html>
